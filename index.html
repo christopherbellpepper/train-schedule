@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    
+    <div id="displayed-data">
+        <h1>Current Train Schedule</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Train Name</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Frequency (min)</th>
+            <th scope="col">Next Arrival</th>
+            <th scope="col">Minutes Away</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" id="name-display">""</th>
+            <td id="dest-display">""</td>
+            <td id="freq-display">""</td>
+            <td id="time-display">""</td>
+            <td id="name-display">""</td>
+          </tr>
+          <tr>
+            <th scope="row">Oregon Trail</th>
+            <td>Portland, OR</td>
+            <td>360</td>
+            <td>13:00</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th scope="row">Oregon Trail</th>
+            <td>Portland, OR</td>
+            <td>360</td>
+            <td>13:00</td>
+            <td>12</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      What is Lorem Ipsum? 
+    </p>
+
+
+
+  <!-- Displayed Data (needs to become a table)--> 
+  
+
+     <!-- An utterly ugly form! -->
+  <label for="name-input">Train Name:</label>
+  <input class="form-control" id="name-input" type="text">
+  <label for="dest-input">Destination:</label>
+  <input class="form-control" id="dest-input" type="text">
+  <label for="time-input">First Train Time: (HH:mm - Military Time)</label>:</label>
+  <input class="form-control" id="time-input" type="text">
+  <label for="freq-input">Frequency: (Minutes)</label>
+  <input class="form-control" id="freq-input" type="text">
+
+  <hr>
+  <!-- Submit Button -->
+  <button id="click-button" type="submit">Submit</button>
+
+  </body>
+  <!-- <<<<<javaScript Links>>>>> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-database.js"></script>
+  <script rel="javascript" type="text/javascript" src="assets/javascript/app.js"></script>
+</html>

@@ -1,0 +1,9 @@
+h1 {
+    color: greenyellow;
+    text-align: center;
+}
+
+body {
+    max-width: 960px;
+    margin: auto;
+}
